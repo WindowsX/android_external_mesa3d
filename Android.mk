@@ -133,7 +133,7 @@ LOCAL_MODULE_TAGS := optional
 ifeq ($(DEBUG_BUILD),true)
 LOCAL_CFLAGS += -DDEBUG -UNDEBUG -O0 -g
 else
-LOCAL_CFLAGS += -O3
+LOCAL_CFLAGS += -O3 -fno-strict-aliasing
 endif
 
 LOCAL_MODULE := libMesa
@@ -165,7 +165,7 @@ LOCAL_MODULE_TAGS := optional
 ifeq ($(DEBUG_BUILD),true)
 LOCAL_CFLAGS += -DDEBUG -UNDEBUG -O0 -g
 else
-LOCAL_CFLAGS += -O3
+LOCAL_CFLAGS += -O3 -fno-strict-aliasing
 endif
 
 LOCAL_MODULE := libMesa
